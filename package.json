@@ -1,0 +1,25 @@
+{
+  "name": "simple-js-bundler",
+  "version": "0.1.0",
+  "description": "Simple setup for bundling JS with webpack",
+  "scripts": {
+    "start": "webpack-dashboard -- webpack-dev-server --config ./webpack.config.js --port 3000 --host 0.0.0.0 --hot --inline --progress --profile --watch --content-base dist/",
+    "build": "webpack --config ./webpack.config.js --progress --profile --color --display-error-details --display-cached",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SamirH",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamirHodzic/simple-js-bundler"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "html-webpack-plugin": "^2.28.0",
+    "webpack": "^2.4.0",
+    "webpack-dashboard": "^0.3.0",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {}
+}
